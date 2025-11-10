@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunAi - Contato</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Configuração Global --- */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f5f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #007aff;
+        }
+
+        /* --- Header / Navegação --- */
+        .main-header {
+            padding: 30px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links a {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-left: 25px;
+            padding-bottom: 5px;
+        }
+        
+        .nav-links a.active {
+            border-bottom: 2px solid #333;
+        }
+
+        /* --- Estilos da Página de Conteúdo --- */
+        .page-content {
+            padding: 60px 0;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .page-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        /* --- Estilos de Formulário --- */
+        .contact-form {
+            max-width: 700px;
+            margin-top: 30px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background-color: #007aff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* --- Responsividade --- */
+        @media (max-width: 768px) {
+            .main-nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .page-content h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">LunAi</a>
+                <div class="nav-links">
+                    <a href="index.html">Blog</a>
+                    <a href="quem-somos.html">Quem Somos Nós</a>
+                    <a href="contato.html" class="active">Contato</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-content">
+            <h2>Fale Conosco</h2>
+            <p>Tem alguma pergunta, sugestão ou gostaria de saber mais sobre como a IA pode transformar seu negócio? Preencha o formulário abaixo e entraremos em contato!</p>
+            
+            <form action="https://formspree.io/f/meovqqlw" method="POST" class="contact-form">
+                
+                <label for="name">Seu Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Sua Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            
+            <p style="margin-top: 30px;">Você também pode nos encontrar nas redes sociais:</p>
+            <p>
+                <a href="https://linkedin.com/lunai" target="_blank">LinkedIn</a> 
+            </p>
+
+        </section>
+    </main>
+
+</body>
+</html>

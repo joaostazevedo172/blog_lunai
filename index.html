@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunAi - Seu Blog de Inteligência Artificial</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body{font-family:'Inter',sans-serif;background-color:#f7f5f2;color:#333;margin:0;padding:0}.container{max-width:1200px;margin:0 auto;padding:0 20px}a{color:#333;text-decoration:none;transition:color .3s}a:hover{color:#007aff}.main-header{padding:30px 0;border-bottom:1px solid #ddd}.main-nav{display:flex;justify-content:space-between;align-items:center}.logo{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700}.nav-links a{font-size:1rem;font-weight:500;margin-left:25px;padding-bottom:5px}.nav-links a.active{border-bottom:2px solid #333}.page-header{padding:60px 0 30px 0}.page-title{font-family:'Playfair Display',serif;font-size:4.5rem;font-weight:700;margin:0}.category-nav{margin-top:30px;border-bottom:1px solid #ddd;padding-bottom:15px;display:flex;gap:25px;flex-wrap:wrap}.category-nav a{font-size:1rem;font-weight:500;padding-bottom:15px;cursor:pointer;border-bottom:2px solid transparent}.category-nav a.active{border-bottom:2px solid #007aff;color:#007aff}.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;padding:40px 0}.card{background-color:transparent;border-top:1px solid #ddd;padding-top:20px;transition:opacity .3s,transform .3s}.card.hidden{display:none}.card img{width:100%;height:auto;aspect-ratio:16 / 10;object-fit:cover;margin-bottom:20px}.card-title{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:700;margin:0 0 15px 0}.card a:hover .card-title{color:#007aff}.card-meta{font-size:.9rem;color:#666;font-weight:500}@media (max-width:768px){.blog-grid{grid-template-columns:1fr}.main-nav{flex-direction:column;gap:20px}.page-title{font-size:3rem}}
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">LunAi</a>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Blog</a>
+                    <a href="quem-somos.html">Quem Somos Nós</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="page-header">
+            <h1 class="page-title">Blog</h1>
+            
+            <nav class="category-nav">
+                <a href="#" class="active" data-category="todos">Todos</a>
+                <a href="#" data-category="ia-generativa">IA Generativa</a>
+                <a href="#" data-category="machine-learning">Machine Learning</a>
+                <a href="#" data-category="automacao">Automação</a>
+                <a href="#" data-category="noticias">Notícias</a>
+            </nav>
+        </section>
+
+        
+        <section class="blog-grid">
+            
+            <article class="card" data-category="ia-generativa">
+                <a href="post-ia-generativa.html">
+                    <img src="https://th.bing.com/th/id/OIP.1WBFGTlO419kk1JQLZE0qgHaEo?w=250&h=180&c=7&r=0&o=7&cb=ucfimgc2&dpr=1.3&pid=1.7&rm=3" alt="Imagem do artigo">
+                    <h2 class="card-title">O que é IA Generativa e como ela está mudando o mundo?</h2>
+                </a>
+                <p class="card-meta">IA Generativa • 10 de Nov, 2025</p>
+            </article>
+
+            <article class="card" data-category="machine-learning">
+                <a href="post-machine-learning.html">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.cG6U1qstYDijh9bPL42e-QHaEo?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Imagem do artigo">
+                    <h2 class="card-title">Machine Learning: O Motor da Automação de Negócios</h2>
+                </a>
+                <p class="card-meta">Machine Learning • 05 de Nov, 2025</p>
+            </article>
+
+            <article class="card" data-category="automacao">
+                <a href="post-llms.html">
+                    <img src="https://www.criativaead.com.br/wp-content/uploads/2023/09/ferramenta-lms-empresas.jpg" alt="Imagem do artigo">
+                    <h2 class="card-title">5 Maneiras de Usar Modelos de Linguagem (LLMs) na sua Empresa</h2>
+                </a>
+                <p class="card-meta">Automação • 01 de Nov, 2025</p>
+            </article>
+
+            <article class="card" data-category="machine-learning">
+                <a href="post-deep-learning.html">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.HhGAlESsz8ZU_KnO6J1q9QHaEc?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Imagem do artigo">
+                    <h2 class="card-title">Deep Learning vs. Machine Learning: Qual a diferença?</h2>
+                </a>
+                <p class="card-meta">Machine Learning • 28 de Out, 2025</p>
+            </article>
+
+            <article class="card" data-category="noticias">
+                <a href="post-anuncio-servicos.html">
+                    <img src="https://th.bing.com/th/id/OIP.6ItSlQDbkU70-oJCIcyjxwHaE8?w=245&h=180&c=7&r=0&o=7&cb=ucfimgc2&dpr=1.3&pid=1.7&rm=3" alt="Imagem do artigo">
+                    <h2 class="card-title">LunAi Anuncia Futuros Serviços de Automação</h2>
+                </a>
+                <p class="card-meta">Notícias • 25 de Out, 2025</p>
+            </article>
+
+            <article class="card" data-category="ia-generativa">
+                <a href="post-etica-ia.html">
+                    <img src="https://img.freepik.com/fotos-premium/a-etica-da-ia-na-arte-o-delicado-equilibrio-da-tecnologia-e-da-moral-a-ia-gerada_223509-471.jpg" alt="Imagem do artigo">
+                    <h2 class="card-title">Os Desafios Éticos da Inteligência Artificial em 2026</h2>
+                </a>
+                <p class="card-meta">IA Generativa • 22 de Out, 2025</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const categoryLinks = document.querySelectorAll(".category-nav a");
+            const postCards = document.querySelectorAll(".blog-grid .card");
+            categoryLinks.forEach(link => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    const selectedCategory = link.dataset.category;
+                    categoryLinks.forEach(navLink => {
+                        navLink.classList.remove("active");
+                    });
+                    link.classList.add("active");
+                    postCards.forEach(card => {
+                        const cardCategory = card.dataset.category;
+                        if (selectedCategory === "todos" || cardCategory === selectedCategory) {
+                            card.classList.remove("hidden");
+                        } else {
+                            card.classList.add("hidden");
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
